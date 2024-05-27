@@ -1,0 +1,63 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    margin: 0; /* Elimina el margen por defecto del cuerpo */
+    padding: 0; /* Elimina el relleno por defecto del cuerpo */
+    width: 100%; /* Ancho del cuerpo al 100% del ancho de la ventana */
+    height: 100%; /* Altura del cuerpo al 100% de la altura de la ventana */
+}
+.card-img-top{
+    border-radius: 50px;
+    padding: 20px;
+}
+.card{
+    border-radius: 30px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
+}
+.card-body{
+    padding: 25px;
+    margin-top: -15px;
+}
+.btn-primary{
+    border-radius: 50px;
+    width: 120px;
+}
+.btn-primary:hover{
+    background-color: black;
+    border: none;
+}
+h3,h5{
+    color: rgb(0, 91, 228);
+}
+.imagen {
+    max-width: 100%; /* La imagen no superará el 100% del ancho del contenedor */
+    height: auto; /* La altura se ajustará automáticamente para mantener la proporción */
+}
+/* Estilos para dispositivos de pantalla grande (más de 768px de ancho) */
+@media screen and (min-width: 768px) {
+    .elemento {
+        width: 50%; /* Por ejemplo, el elemento ocupa el 50% del ancho de la pantalla */
+    }
+}
+
+/* Estilos para dispositivos de pantalla mediana (entre 576px y 768px de ancho) */
+@media screen and (min-width: 576px) and (max-width: 767px) {
+    .elemento {
+        width: 70%; /* Por ejemplo, el elemento ocupa el 70% del ancho de la pantalla */
+    }
+}
+
+/* Estilos para dispositivos de pantalla pequeña (menos de 576px de ancho) */
+@media screen and (max-width: 575px) {
+    .elemento {
+        width: 90%; /* Por ejemplo, el elemento ocupa el 90% del ancho de la pantalla */
+    }
+}
+.contenedor {
+    width: 90%; /* Anchura del contenedor al 90% del ancho del viewport */
+    max-width: 1200px; /* Establece un ancho máximo para el contenedor */
+    margin: 0 auto; /* Centra el contenedor horizontalmente */
+}
